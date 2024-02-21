@@ -29,24 +29,22 @@ def main():
     }
 
     cols_to_keep = [
-        "Q024",
-        "Q025",
-        "NU_NOTA_REDACAO",
         "NU_NOTA_CN",
         "NU_NOTA_CH",
         "NU_NOTA_LC",
         "NU_NOTA_MT",
+        "NU_NOTA_COMP1",
+        "NU_NOTA_COMP2",
+        "NU_NOTA_COMP3",
+        "NU_NOTA_COMP4",
+        "NU_NOTA_COMP5",
+        "NU_NOTA_REDACAO",
         "TP_PRESENCA_CN",
         "TP_PRESENCA_CH",
         "TP_PRESENCA_LC",
         "TP_PRESENCA_MT",
-        "SG_UF_PROVA",
         "SG_UF_ESC",
-        "TP_ESCOLA",
-        "TP_ENSINO",
-        "IN_TREINEIRO",
-        "TP_SEXO",
-        "TP_FAIXA_ETARIA"
+        "SG_UF_PROVA",
     ]
 
     for uf, df in uf_df_dict.items():

@@ -6,11 +6,11 @@
             "media_notas_red": 620.7413749950601,
             "media_notas_cn": 488.63526279581725,
             "media_notas_mt": 526.1195321959274,
-            "dev_pad_ch": 82.20721511447242,
-            "dev_pad_lc": 77.92979331601136,
-            "dev_pad_red": 220.0871373498772,
-            "dev_pad_cn": 68.94393780264518,
-            "dev_pad_mt": 114.47664697902708
+            "media_notas_red_comp1": 117.86571469972205,
+            "media_notas_red_comp2": 141.04646108044736,
+            "media_notas_red_comp3": 114.613307338664,
+            "media_notas_red_comp4": 130.1229038504604,
+            "media_notas_red_comp5": 117.09298802576633
         },
         "notas": {
             "num_notas_ch_0_199": 116,
@@ -52,11 +52,11 @@
             "media_notas_red": 635.797084496137,
             "media_notas_cn": 504.5981462124031,
             "media_notas_mt": 556.4771793372665,
-            "dev_pad_ch": 78.93803738071594,
-            "dev_pad_lc": 72.90788056143191,
-            "dev_pad_red": 208.74122018745524,
-            "dev_pad_cn": 71.99011441143408,
-            "dev_pad_mt": 118.19537626021038
+            "media_notas_red_comp1": 123.66426586008478,
+            "media_notas_red_comp2": 144.99657425510938,
+            "media_notas_red_comp3": 117.62303437442556,
+            "media_notas_red_comp4": 132.5245233201317,
+            "media_notas_red_comp5": 116.98868668638559
         },
         "notas": {
             "num_notas_ch_0_199": 323,

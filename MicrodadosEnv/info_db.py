@@ -44,6 +44,11 @@ def main():
         notas_red = df_present_fd["NU_NOTA_REDACAO"].to_list()
         notas_cn = df_present_sd["NU_NOTA_CN"].to_list()
         notas_mt = df_present_sd["NU_NOTA_MT"].to_list()
+        notas_red_comp1 = df_present_fd["NU_NOTA_COMP1"].to_list()
+        notas_red_comp2 = df_present_fd["NU_NOTA_COMP2"].to_list()
+        notas_red_comp3 = df_present_fd["NU_NOTA_COMP3"].to_list()
+        notas_red_comp4 = df_present_fd["NU_NOTA_COMP4"].to_list()
+        notas_red_comp5 = df_present_fd["NU_NOTA_COMP5"].to_list()
 
         num_notas_ch_0_199 = len([n for n in notas_ch if 0.0 <= n <= 199.9])
         num_notas_ch_200_399 = len([n for n in notas_ch if 200.0 <= n <= 399.9])
@@ -76,11 +81,11 @@ def main():
         media_notas_red = statistics.mean(notas_red)
         media_notas_cn = statistics.mean(notas_cn)
         media_notas_mt = statistics.mean(notas_mt)
-        dev_pad_ch = statistics.stdev(notas_ch)
-        dev_pad_lc = statistics.stdev(notas_lc)
-        dev_pad_red = statistics.stdev(notas_red)
-        dev_pad_cn = statistics.stdev(notas_cn)
-        dev_pad_mt = statistics.stdev(notas_mt)
+        media_notas_red_comp1 = statistics.mean(notas_red_comp1)
+        media_notas_red_comp2 = statistics.mean(notas_red_comp2)
+        media_notas_red_comp3 = statistics.mean(notas_red_comp3)
+        media_notas_red_comp4 = statistics.mean(notas_red_comp4)
+        media_notas_red_comp5 = statistics.mean(notas_red_comp5)
 
         num_notas_mil_red = notas_red.count(1000.0)
 
@@ -91,11 +96,11 @@ def main():
                 "media_notas_red": media_notas_red,
                 "media_notas_cn": media_notas_cn,
                 "media_notas_mt": media_notas_mt,
-                "dev_pad_ch": dev_pad_ch,
-                "dev_pad_lc": dev_pad_lc,
-                "dev_pad_red": dev_pad_red,
-                "dev_pad_cn": dev_pad_cn,
-                "dev_pad_mt": dev_pad_mt
+                "media_notas_red_comp1": media_notas_red_comp1,
+                "media_notas_red_comp2": media_notas_red_comp2,
+                "media_notas_red_comp3": media_notas_red_comp3,
+                "media_notas_red_comp4": media_notas_red_comp4,
+                "media_notas_red_comp5": media_notas_red_comp5
             },
             "notas": {
                 "num_notas_ch_0_199": num_notas_ch_0_199,
@@ -124,7 +129,6 @@ def main():
                 "num_notas_mt_600_799": num_notas_mt_600_799,
                 "num_notas_mt_800_1000": num_notas_mt_800_1000,
                 "num_notas_mil_red": num_notas_mil_red
-
             },
             "num_presentes_pd": num_presentes_pd,
             "num_presentes_sd": num_presentes_sd,
